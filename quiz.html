@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Page</title>
+  <link rel="stylesheet" href="style1.css">
+  <script defer src="script1.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="scrolling-text">
+      <marquee behavior="scroll" direction="left">
+        "Push yourself, because no one else is going to do it for you." | "Don’t watch the clock; do what it does. Keep going." | "Great things never come from comfort zones."
+      </marquee>
+    </div>
+  </header>
+
+  <main>
+    <section class="quiz-selection">
+      <h2>Select a Quiz Category</h2>
+      <div class="category-buttons">
+        <button onclick="startQuiz('history')">History</button>
+        <button onclick="startQuiz('polity')">Polity</button>
+        <button onclick="startQuiz('geography')">Geography</button>
+      </div>
+    </section>
+
+    <section id="quiz-container" style="display:none">
+      <h3 id="quiz-title"></h3>
+      <div id="question"></div>
+      <div id="answer-buttons" class="answer-buttons"></div>
+    </section>
+
+    <section id="quiz-result" class="quiz-result" style="display:none"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Quiz App. All rights reserved.</p>
+  </footer>
+</body>
+</html>
